@@ -4,12 +4,16 @@
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.TextArea?>
 <?import java.net.URL?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.layout.HBox?>
+<VBox fx:controller="sample.Controller"
+      xmlns:fx="http://javafx.com/fxml" alignment="center">
    <stylesheets>
       <URL value="@../css/style.css"/>
    </stylesheets>
-   <TextArea fx:id="chatField" GridPane.rowIndex="0" editable="false"/>
-   <TextField fx:id="messageField" GridPane.rowIndex="1" promptText="Введите сообщение" onAction="#sendMsg"/>
-   <Button fx:id="sendBtn" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#sendMsg"/>
-</GridPane>
+   <TextArea fx:id="chatField" VBox.vgrow="ALWAYS" editable="false"/>
+   <HBox>
+      <TextField fx:id="messageField" HBox.hgrow="ALWAYS" promptText="Введите сообщение" onAction="#sendMsg"/>
+      <Button fx:id="sendBtn" GridPane.rowIndex="1" GridPane.columnIndex="1" onAction="#sendMsg"/>
+   </HBox>
+</VBox>
