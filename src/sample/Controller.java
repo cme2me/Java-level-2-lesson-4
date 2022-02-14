@@ -18,6 +18,6 @@ public class Controller {
     public void sendMsg(ActionEvent actionEvent) {
         chatField.appendText(messageField.getText()+"\n");
         messageField.clear();
-        sendBtn.requestFocus();
+        messageField.requestFocus();
     }
 }

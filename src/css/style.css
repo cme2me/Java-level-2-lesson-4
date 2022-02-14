@@ -1,0 +1,7 @@
+.button{
+    -fx-border-style: solid;
+    -fx-background-color: linen;
+}
+.text-area{
+    -fx-background-color: whitesmoke;
+}
