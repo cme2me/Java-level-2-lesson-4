@@ -4,4 +4,8 @@
 }
 .text-area{
     -fx-background-color: whitesmoke;
+    -fx-border-style: inherit;
+}
+.text-field{
+    -fx-border-style: inherit;
 }
